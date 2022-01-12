@@ -1,0 +1,9 @@
+@import '../App.scss';
+
+.featured-movies{
+    @extend .movie-list;
+}
+
+.featured-movie{
+    @extend .movie-box;
+}

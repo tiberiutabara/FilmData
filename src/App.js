@@ -1,9 +1,10 @@
-import './App.css';
+import './App.scss';
 import { BrowserRouter, Switch, Route} from 'react-router-dom';
 import FeaturedMovies from './pages/FeaturedMovies';
 import Search from './pages/Search';
 import Movie from './pages/Movie';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Movie />
           </Route>
         </Switch>
+      <Footer />
       </BrowserRouter>
     </div>
   );

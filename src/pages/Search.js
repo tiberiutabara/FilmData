@@ -3,7 +3,7 @@ import MovieList from '../components/MovieList';
 import { useFetch } from '../hooks/useFetch';
 
 // Styles
-import './Search.css';
+import './Search.scss';
 
 export default function Search() {
     const queryString = useLocation().search;
@@ -15,9 +15,9 @@ export default function Search() {
 
     return (
         <div>
-            <h2 className='page-title'>Movies titled "{query}"</h2>
-            {error && <p>{error}</p>}
-            {isPending && <p>Loading...</p>}
+            <h2 className='page-title'>Movies titled <span>{query}</span></h2>
+            {error && <p className='loading'>{error}</p>}
+            {isPending && <p className='loading'>Loading...</p>}
             {data && <MovieList movies={data.results} />}
         </div>
     )

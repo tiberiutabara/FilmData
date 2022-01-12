@@ -1,0 +1,12 @@
+@import '../App.scss';
+
+.page-title{
+    text-align: center;
+
+    span{
+        margin-left: .5rem;
+        font-size: 30px;
+        font-family: 'Ubuntu', sans-serif;
+        color: #21D4FD;
+    }
+}

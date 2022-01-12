@@ -1,0 +1,32 @@
+@import '../App.scss';
+
+.search-list{
+    @extend .movie-list;
+}
+
+.search-movies{
+    @extend .movie-box;
+}
+
+.no-poster{
+    text-align: center;
+    margin-left: 1rem;
+    position: absolute;
+    top: 5px;
+}
+
+.error{
+    margin-top: 2em;
+    margin-bottom: 6em;
+    text-align: center;
+    font-size: 24px;
+
+    i.arrow{
+        font-size: 32px;
+        margin-top: 1em;
+    }
+
+    i.smile{
+        font-size: 50px;
+    }
+}

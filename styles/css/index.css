@@ -1,0 +1,31 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #3a6186;
+  background: -webkit-gradient(linear, left top, right top, from(#89253e), to(#3a6186));
+  background: linear-gradient(to right, #89253e, #3a6186);
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #21D4FD;
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,43 @@
+
+.searchbar{
+    margin-right: 3.5em;
+
+    label{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 20px;
+        margin-right: .5rem;
+    }
+
+    input{
+        font-family: 'Ubuntu', sans-serif;
+        color: #333;
+        padding: 6px 15px;
+        font-size: 16px;
+        border-radius: 15px;
+        border: none;
+        box-shadow: 1px 1px 5px hsla(191, 98%, 56%, 0.60);
+
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .searchbar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 0 2em 0;
+    }
+}
+
+@media (max-width: 380px){
+    .searchbar{
+        label{
+            display: block;
+            text-align: center;
+            margin-bottom: .5rem;
+        }
+    }
+}

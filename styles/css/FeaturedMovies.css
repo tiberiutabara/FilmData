@@ -1,0 +1,22 @@
+.movie-list, .featured-movies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.movie-box, .featured-movie {
+  margin: 1em;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+}
+
+.movie-box img, .featured-movie img {
+  max-width: 100%;
+}
+/*# sourceMappingURL=FeaturedMovies.css.map */

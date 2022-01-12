@@ -1,0 +1,31 @@
+
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    opacity: 80%;
+}
+
+.brand{
+    color: whitesmoke;
+    text-decoration: none;
+    margin-left: 3.5em;
+    font-style: italic;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+
+    span{
+        color: #21D4FD;
+    }
+}
+
+@media (max-width: 700px){
+    .brand{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+}

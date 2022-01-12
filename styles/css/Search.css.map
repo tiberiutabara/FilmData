@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,WAAW,CAAA;EACP,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,YAAY;CAChC;;AAED,AAAA,UAAU,CAAA;EACN,MAAM,EAAE,GAAG;EACX,KAAK,EAAE,KAAK;EACZ,QAAQ,EAAE,MAAM;EAChB,aAAa,EAAE,aAAa;CAK/B;;AATD,AAMI,UANM,CAMN,GAAG,CAAA;EACC,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "../../src/pages/Search.scss",
+        "../../src/App.scss"
+    ],
+    "names": [],
+    "file": "Search.css"
+}

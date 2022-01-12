@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
+import Banner from '../components/Banner';
 import { useFetch } from '../hooks/useFetch';
 
 // Styles
-import './FeaturedMovies.css';
+import './FeaturedMovies.scss';
 
 // API
 const API = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=73544c212e932a94aae0b54bccf03afc&page=1";
@@ -12,18 +13,20 @@ export default function FeaturedMovies() {
     const { data, isPending, error } = useFetch(API);
 
     return (
-        <div className='featured-movies'>
-            {isPending && <div>Loading...</div>}
-            {error && <div>{error}</div>}
-            {data && data.results.map(movie =>(
-                <div key={movie.id} className='featured-movie'>
-                    <img src={IMG + movie.poster_path} alt={movie.title}/>
-                    <h3>{movie.title}</h3>
-                    <p>Rating: {movie.vote_average}</p>
-                    <Link to={`/movies/${movie.id}`}  className='link-btn'>See Info</Link>
-                </div>
-            ))}
-        </div>
+        <>
+            <Banner />
+
+            <div className='featured-movies' id='featured'>
+                {isPending && <p className='loading'>Loading...</p>}
+                {error && <p className='loading'>{error}</p>}
+                {data && data.results.map(movie =>(
+                    <div key={movie.id} className='featured-movie'>
+                        <img src={IMG + movie.poster_path} alt={movie.title}/>
+                        <Link to={`/movies/${movie.id}`}  className='link-btn'><button>Read More</button></Link>
+                    </div>
+                ))}
+            </div>
+        </>
     )
 }
 

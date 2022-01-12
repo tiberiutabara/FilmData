@@ -1,0 +1,28 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  opacity: 80%;
+}
+
+.brand {
+  color: whitesmoke;
+  text-decoration: none;
+  margin-left: 3.5em;
+  font-style: italic;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+}
+
+.brand span {
+  color: #21D4FD;
+}
+/*# sourceMappingURL=Navbar.css.map */
